@@ -3,7 +3,7 @@
 <p>We hope you find exactly what you're looking for in a place to stay.</p>
 
 {{#each model.announcements as |announcement|}}
-  {{announcement-tile announcement=announcement destroyAnnouncement="destroyAnnouncement"}}
+  {{announcement-tile announcement=announcement}}
 {{/each}}
 
 {{new-announcement saveAnnouncement="saveAnnouncement"}}

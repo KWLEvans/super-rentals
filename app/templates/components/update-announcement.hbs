@@ -1,0 +1,20 @@
+{{#if updateAnnouncementForm}}
+  <h4>Announcement</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="title">Title</label>
+        {{input value=title id="title" placeholder=announcement.title}}
+      </div>
+
+      <div class="form-group">
+        <label for="content">Announcement body</label>
+        {{textarea value=content id="content" placeholder=announcement.content}}
+      </div>
+
+      <button {{action 'update' announcement}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'updateAnnouncementForm'}}>Update</button>
+{{/if}}

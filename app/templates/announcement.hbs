@@ -1,0 +1,6 @@
+<h2>Edit announcement</h2>
+<h3>{{model.title}}</h3>
+<h6>{{model.timestamp}}</h6>
+<p>{{model.content}}</p>
+{{update-announcement announcement=model update="update"}}
+<button class="btn btn-danger" {{action 'destroyAnnouncement' model}}>Delete</button>

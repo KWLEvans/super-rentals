@@ -1,6 +1,6 @@
-<div>
-  <h3>{{announcement.title}}</h3>
-  <h5>{{announcement.timestamp}}</h5>
-  <p>{{announcement.content}}</p>
-  <button {{action 'destroyAnnouncement' announcement}}>DELETE</button>
+<div class="panel panel-default">
+  <div class="panel-heading">{{announcement.title}}</div>
+  <div class="panel-body">{{announcement.timestamp}}</div>
+  <div class="panel-body">{{announcement.content}}</div>
+  {{#link-to 'announcement' announcement.id}}<button class="btn btn-warning">Edit</button>{{/link-to}}
 </div>
