@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'super-rentals',
+    modulePrefix: 'shitty-rentals',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -16,7 +16,12 @@ module.exports = function(environment) {
         Date: false
       }
     },
-
+    firebase: {
+      apiKey: "AIzaSyCIBdmOmZWrh_o5lOuUbvrGzeX-PMGwlw8",
+      authDomain: "shitty-rentals.firebaseapp.com",
+      databaseURL: "https://shitty-rentals.firebaseio.com",
+      storageBucket: "shitty-rentals.appspot.com"
+    },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
