@@ -16,5 +16,10 @@
     "type": "Apartment",
     "bedrooms": 3,
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg"
-  }]
+  }],
+  "announcements": [{
+      "title": "This is title",
+      "timestamp": "This is timestumps",
+      "content": "this is contents with lots of words so you can see better that it's going to be a long string of words and content which you see on the page and stuff."
+    }]
 }
