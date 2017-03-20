@@ -1,15 +1,15 @@
 {{#if addNewAnnouncement}}
-  <h1>New Announcement</h1>
   <div class="container">
+    <h1>New Announcement</h1>
     <form>
       <div class="form-group">
         <label for="title">Title</label>
-        {{input value=title id="title"}}
+        {{input value=title id="title" class="form-control"}}
       </div>
 
       <div class="form-group">
         <label for="content">Announcement body</label>
-        {{textarea value=content id="content" rows="6"}}
+        {{textarea value=content id="content" rows="6" class="form-control"}}
       </div>
 
       <button {{action 'saveAnnouncement'}}>Save</button>
